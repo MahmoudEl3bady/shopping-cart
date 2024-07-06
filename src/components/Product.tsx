@@ -4,6 +4,7 @@ export interface IProduct {
   price: number;
   description: string;
   image: string;
+  quantity?: number;
 }
 import {
   Card,
@@ -29,7 +30,7 @@ const Product = ({product ,handleAddToCart}: IProps) => {
         <Image src={image} alt={title} borderRadius="lg" />
         <Stack mt="6" spacing="3">
           <Heading size="md">{title}</Heading>
-          <Text>{description.substring(0, 50)}...</Text>
+          <Text className="text-gray-500">{description.substring(0, 50)}...</Text>
           <Text color="blue.600" className="" fontSize="2xl">
          $ {price}
           </Text>
