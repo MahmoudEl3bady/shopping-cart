@@ -27,9 +27,6 @@ const CartPage = ({
   handleDecreaseQuan: (item: IProduct) => void;
   totalPrice:number | string;
 }) => {
-  //TODO:Render the total price
-  //TODO:when checkout clear the cart
-
   return (
     <>
       <Modal
